@@ -1,0 +1,42 @@
+.header-search {
+    width: 320px;
+    // .header-search__form
+
+    &__form {
+        width: 100%;
+    }
+
+    // .header-search__field
+
+    &__field {
+        position: relative;
+        width: 100%;
+        height: 38px;
+        background-color: var(--color-foreground-secondary);
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    // .header-search__input
+
+    &__input {
+        width: 100%;
+        height: 100%;
+        padding-left: 40px;
+        padding-right: 20px;
+        color: #fff;
+        &::placeholder {
+            color: var(--color-text);
+        }
+    }
+
+    // .header-search__button
+
+    &__button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 38px;
+        height: 38px;
+    }
+}

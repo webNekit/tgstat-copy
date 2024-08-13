@@ -1,12 +1,14 @@
 :root {
 	// container var
-	--container-width: 1200px;
+	--container-width: 1190px;
 	--container-padding: 15px;
 	// fonts var
 	--font-primary: "Nunito", sans-serif;
 	// colors var
 	--color-background: #fff;
-	--color-background-secondary: #fafbfe;
+	--color-background-secondary: #F0FDF4;
+	--color-foreground: #313a46;
+	--color-foreground-secondary: #3c4655;
 	--color-text: #7f8894;
 	--color-text-secondary: #474d56;
 	--color-border: #dee2e6;
@@ -27,13 +29,15 @@
 
 .dark {
 	// container var
-	--container-width: 1200px;
+	--container-width: 1190px;
 	--container-padding: 15px;
 	// fonts var
 	--font-primary: "Nunito", sans-serif;
 	// colors var
 	--color-background: #37404a;
 	--color-background-secondary: #343a40;
+	--color-foreground: #313a46;
+	--color-foreground-secondary: #3c4655;
 	--color-text: #aab8c5;
 	--color-text-secondary: #f1f1f1;
 	--color-border: #464f5b;
