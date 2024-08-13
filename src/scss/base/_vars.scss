@@ -1,0 +1,52 @@
+:root {
+	// container var
+	--container-width: 1200px;
+	--container-padding: 15px;
+	// fonts var
+	--font-primary: "Nunito", sans-serif;
+	// colors var
+	--color-background: #fff;
+	--color-background-secondary: #fafbfe;
+	--color-text: #7f8894;
+	--color-text-secondary: #474d56;
+	--color-border: #dee2e6;
+	--color-border-secondary: #eef2f7;
+	--color-ghost: #eef2f7;
+	--color-ghost-secondary: #cbd7e7;
+
+	// rounded var
+	--rounded-sm: 4px;
+	--rounded-md: 8px;
+	--rounded-lg: 12px;
+	--rounded-xl: 16px;
+	// screen var
+    --laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+	// container var
+	--container-width: 1200px;
+	--container-padding: 15px;
+	// fonts var
+	--font-primary: "Nunito", sans-serif;
+	// colors var
+	--color-background: #37404a;
+	--color-background-secondary: #343a40;
+	--color-text: #aab8c5;
+	--color-text-secondary: #f1f1f1;
+	--color-border: #464f5b;
+	--color-border-secondary: #4d5764;
+	--color-ghost: #464f5b;
+	--color-ghost-secondary: #30363e;
+		// rounded var
+	--rounded-sm: 4px;
+	--rounded-md: 8px;
+	--rounded-lg: 12px;
+	--rounded-xl: 16px;
+	// screen var
+    --laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
