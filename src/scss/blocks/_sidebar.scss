@@ -7,6 +7,9 @@
     border: 1px solid var(--color-border);
     border-radius: 4px;
     overflow: hidden;
+    @include small-tablet {
+        height: 100%;
+    }
     &__wrapper {
         width: 100%;
     }
@@ -21,6 +24,9 @@
 
     &__categories-item {
         width: 100%;
+        @include small-tablet {
+            border-bottom: 1px solid var(--color-border-secondary);
+        }
         &:not(:last-child) {
             border-bottom: 1px solid var(--color-border-secondary);
         }
