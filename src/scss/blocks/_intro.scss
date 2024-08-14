@@ -54,6 +54,7 @@
 
     &__head-filterTarget {
         cursor: pointer;
+        font-weight: 500;
         font-size: 14px;
         padding: 4px 12px;
         border: 1px solid var(--color-border);
@@ -66,12 +67,12 @@
     // .intro__bottom-row
 
     &__bottom-row {
-        margin-top: 72px;
+        margin-top: 52px;
         width: 100%;
         display: flex;
         justify-content: center;
         @include small-tablet {
-            margin-top: 42px;
+            margin-top: 32px;
         }
     }
 
@@ -95,6 +96,7 @@
     &__bottom-filterTarget {
         padding: 8px 16px;
         font-weight: 500;
+        font-size: 14px;
         border-radius: 25px;
         background-color: var(--color-ghost);
         border: 1px solid var(--color-border);

@@ -136,7 +136,7 @@
     // .card__detail-category
 
     &__detail-category {
-        font-size: 14px;
+        font-size: 12px;
         padding: 1px 6px;
         border-radius: 4px;
         border: 1px solid var(--color-border);
@@ -183,5 +183,6 @@
 
     &__statistics-text {
         font-size: 14px;
+        text-align: center;
     }
 }
