@@ -14,7 +14,19 @@
 	@@include('blocks/header.html')
 	<main class="website__main" id="main">
 		<div class="website__main-content" id="main-content">
-
+			@@include('blocks/intro.html')
+			<div class="website__main-wrapper">
+				<div class="container website__main-wrapperContainer">
+					<div class="website__main-wrapperBody">
+						<div class="website__main-wrapperSidebar">
+							@@include('blocks/sidebar.html')
+						</div>
+						<div class="website__main-wrapperContent">
+							content
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</main>
 	@@include('blocks/footer.html')

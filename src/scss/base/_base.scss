@@ -42,3 +42,24 @@ pre.code {
 	height: 100vh;
 	overflow-y: hidden;
 }
+.website__main {
+	width: 100%;
+	&-content {
+		width: 100%;
+	}
+	&-wrapper {
+		width: 100%;
+		&Body {
+			width: 100%;
+			display: flex;
+			gap: 24px;
+		}
+		&Sidebar {
+			width: 280px;
+		}
+		&Content {
+			flex: 1;
+			border: 1px solid blue;
+		}
+	}
+}

@@ -1,7 +1,3 @@
-// import mobileNav from './modules/mobile-nav.js';
-// mobileNav();
-
-
 import themeMode from './modules/theme-mode.js';
 themeMode();
 

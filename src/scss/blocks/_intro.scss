@@ -1,0 +1,106 @@
+.intro {
+    width: 100%;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    // .intro__container
+
+    &__container {}
+
+    // .intro__head-row
+
+    &__head-row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 14px;
+    }
+
+    // .intro__head-title
+
+    &__head-title {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        color: var(--color-text-secondary);
+    }
+
+    // .intro__head-filter
+
+    &__head-filter {
+        display: flex;
+    }
+
+    // .intro__head-filterItem
+
+    &__head-filterItem {
+        display: inline-flex;
+        &:first-child {
+            .intro__head-filterTarget {
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+            }
+        }
+        &:last-child {
+            .intro__head-filterTarget {
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+            }
+        }
+    }
+
+    // .intro__head-filterTarget
+
+    &__head-filterTarget {
+        cursor: pointer;
+        font-size: 14px;
+        padding: 4px 12px;
+        border: 1px solid var(--color-border);
+        &--active {
+            background-color: var(--color-text-secondary);
+            color: var(--color-background-secondary);
+        }
+    }
+
+    // .intro__bottom-row
+
+    &__bottom-row {
+        margin-top: 72px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        @include small-tablet {
+            margin-top: 42px;
+        }
+    }
+
+    // .intro__bottom-filter
+
+    &__bottom-filter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    // .intro__bottom-filterItem
+
+    &__bottom-filterItem {
+        display: inline-flex;
+    }
+
+    // .intro__bottom-filterTarget
+
+    &__bottom-filterTarget {
+        padding: 8px 16px;
+        font-weight: 500;
+        border-radius: 25px;
+        background-color: var(--color-ghost);
+        border: 1px solid var(--color-border);
+        transition: background 200ms;
+        &:hover {
+            background-color: var(--color-ghost-secondary);
+        }
+    }
+}
