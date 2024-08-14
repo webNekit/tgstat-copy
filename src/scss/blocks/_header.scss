@@ -9,6 +9,7 @@
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
+		gap: 24px;
 	}
 
 	// .header__col-left
@@ -16,6 +17,10 @@
 	&__col-left {
 		display: flex;
 		gap: 32px;
+		@include small-tablet {
+			position: relative;
+			flex: 1;
+		}
 	}
 
 	// .header__logo
@@ -29,8 +34,6 @@
 	// .header__search-form
 
 	&__search-form {
-		display: flex;
-		align-items: center;
 		height: 70px;
 	}
 
@@ -51,11 +54,23 @@
 
 	&__actions-item {
 		display: inline-flex;
+		&:first-child {
+			display: none;
+			@include small-tablet {
+				display: inline-flex;
+			}
+		}
 	}
 
 	// .header__actions-buttonTheme
 
 	&__actions-buttonTheme {
+		height: 70px;
+		font-size: 22px;
+		color: var(--color-text);
+	}
+	
+	&__actions-buttonSearch {
 		height: 70px;
 		font-size: 22px;
 		color: var(--color-text);

@@ -7,5 +7,8 @@ themeMode();
 
 import dropDownLang from './modules/lang-dropdown.js';
 dropDownLang();
+
+import modalSearchToggle from './modules/modal-search.js';
+modalSearchToggle();
 // import isAvifWebp from 'avif-webp-checker';
 // isAvifWebp({ mode: 'webp' });

@@ -1,5 +1,17 @@
 .header-search {
     width: 320px;
+    display: flex;
+    align-items: center;
+    @include small-tablet {
+        position: absolute;
+        width: 100%;
+        display: none;
+    }
+    &--active {
+        @include small-tablet {
+            display: flex;
+        }
+    }
     // .header-search__form
 
     &__form {
