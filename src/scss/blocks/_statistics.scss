@@ -1,0 +1,103 @@
+.statistics {
+    width: 100%;
+    padding-top: 32px;
+    // .statistics__container
+
+    &__container {
+        max-width: 1024px;
+    }
+
+    // .statistics__data-wrapper
+
+    &__data-wrapper {
+        width: 100%;
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(2,1fr);
+        @include mobile {
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+
+    // .statistics__data-card
+
+    &__data-card {
+        width: 100%;
+        padding: 24px 24px;
+        border-radius: 4px;
+        border: 1px solid var(--color-border);
+        background-color: var(--color-background);
+    }
+
+    // .statistics__data-cardContent
+
+    &__data-cardContent {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        @include mobile {
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+    }
+
+    // .statistics__data-cardInfo
+
+    &__data-cardInfo {
+        display: flex;
+        flex-direction: column;
+        row-gap: 18px;
+        @include mobile {
+            order: 2;
+        }
+    }
+
+    // .statistics__data-cardValue
+
+    &__data-cardValue {
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--color-text-secondary);
+    }
+
+    // .statistics__data-cardList
+
+    &__data-cardList {
+        width: 100%;
+    }
+
+    // .statistics__data-cardList-item
+
+    &__data-cardList-item {
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
+    // .statistics__data-cardList-primaryText
+
+    &__data-cardList-primaryText {
+        font-size: 14px;
+        font-weight: 600;
+        color: #42d29d;
+    }
+
+    // .statistics__data-cardList-secondaryText
+
+    &__data-cardList-secondaryText {
+        font-size: 12px;
+    }
+
+    // .statistics__data-cardLabel
+
+    &__data-cardLabel {
+        text-align: right;
+        font-size: 14px;
+        text-transform: uppercase;
+        @include mobile {
+            order: 1;
+            text-align: left;
+            margin-bottom: 12px;
+        }
+    }
+}

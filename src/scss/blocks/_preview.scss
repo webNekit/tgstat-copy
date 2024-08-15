@@ -2,7 +2,9 @@
     width: 100%;
     // .preview__container
 
-    &__container {}
+    &__container {
+        max-width: 1024px;
+    }
 
     // .preview__row-content
 
@@ -11,7 +13,6 @@
         padding: 24px 24px;
         display: flex;
         align-items: center;
-
         border-radius: 4px;
         border: 1px solid var(--color-border);
         background-color: var(--color-background);
@@ -87,9 +88,7 @@
             font-size: 24px;
         }
     }
-
     // .preview__chanel-infoLink
-
     &__chanel-infoLink {
         display: inline-block;
         font-size: 14px;
@@ -120,13 +119,13 @@
     // .preview__chanel-specifications
 
     &__chanel-specifications {
-        border-top: 1px solid var(--color-border-secondary);
         padding-top: 18px;
         display: flex;
         align-items: flex-end;
         row-gap: 18px;
         flex-direction: column;
         @include small-tablet {
+            border-top: 1px solid var(--color-border-secondary);
             width: 100%;
             flex-direction: row;
             align-items: center;
