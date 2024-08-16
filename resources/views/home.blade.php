@@ -34,47 +34,7 @@
 <div class="website__main-wrapper">
     <div class="container website__main-wrapperContainer">
         <div class="website__main-wrapperBody">
-            <div class="website__main-wrapperSidebar">
-                <button class="sidebar-toggle">
-                    <i class="ri-arrow-right-s-line"></i>
-                </button>
-                <aside class="sidebar" id="sidebar">
-                    <div class="sidebar__wrapper">
-                        <ul class="sidebar__categories">
-                            <li class="sidebar__categories-item">
-                                <a href="#!" class="sidebar__categories-link">Все категории</a>
-                            </li>
-                            <li class="sidebar__categories-item">
-                                <a href="#!" class="sidebar__categories-link">Блоги</a>
-                            </li>
-                            <li class="sidebar__categories-item">
-                                <a href="#!" class="sidebar__categories-link">Новости и&#160;СМИ</a>
-                            </li>
-                            <li class="sidebar__categories-item">
-                                <a href="#!" class="sidebar__categories-link">Юмор и&#160;развлечения</a>
-                            </li>
-                            <li class="sidebar__categories-item">
-                                <a href="#!" class="sidebar__categories-link">Технологии</a>
-                            </li>
-                            <li class="sidebar__categories-item">
-                                <a href="#!" class="sidebar__categories-link">Экономика</a>
-                            </li>
-                            <li class="sidebar__categories-item">
-                                <a href="#!" class="sidebar__categories-link">Криптовлюта</a>
-                            </li>
-                            <li class="sidebar__categories-item">
-                                <a href="#!" class="sidebar__categories-link">Путешествия</a>
-                            </li>
-                            <li class="sidebar__categories-item">
-                                <a href="#!" class="sidebar__categories-link">Психология</a>
-                            </li>
-                            <li class="sidebar__categories-item">
-                                <a href="#!" class="sidebar__categories-link">Дизайн</a>
-                            </li>
-                        </ul>
-                    </div>
-                </aside>
-            </div>
+            @include('layout.partials.sidebar')
             <div class="website__main-wrapperContent">
                 <ul class="website__main-cards cards-list">
                     <li class="cards-list__item">
