@@ -7,8 +7,8 @@ return [
         'private_channels' => 'Приватные каналы',
     ],
     'bottomButtons' => [
-        'by_subscribers' => '',
-        'by_coverage' => '',
-        'by_citation' => '',
+        'by_subscribers' => 'По подписчикам',
+        'by_coverage' => 'По охвату',
+        'by_citation' => 'По цитируемости',
     ],
 ];

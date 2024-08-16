@@ -3,8 +3,8 @@
         <div class="header__top-row">
             <div class="header__col-left">
                 <div class="header__logo logo">
-                    <a href="index.html" class="logo__link">
-                        <img src="https://tgstat.com/img/logo.png" alt="Логотип сайта" class="logo__brand" />
+                    <a href="{{ route('home') }}" class="logo__link">
+                        <img src="{{ asset('assets/img/logo.png') }}" alt="Логотип сайта" class="logo__brand" />
                         <span class="logo__text">{{ config('app.name') }}</span>
                     </a>
                 </div>

@@ -19,13 +19,13 @@
         <div class="intro__bottom-row">
             <ul class="intro__bottom-filter">
                 <li class="intro__bottom-filterItem">
-                    <button class="intro__bottom-filterTarget">По&#160;подписчикам <i class="ri-arrow-down-line"></i></button>
+                    <button class="intro__bottom-filterTarget">{{ __('intro.bottomButtons.by_subscribers') }} <i class="ri-arrow-down-line"></i></button>
                 </li>
                 <li class="intro__bottom-filterItem">
-                    <button class="intro__bottom-filterTarget">По&#160;охвату <i class="ri-arrow-down-line"></i></button>
+                    <button class="intro__bottom-filterTarget">{{ __('intro.bottomButtons.by_coverage') }} <i class="ri-arrow-down-line"></i></button>
                 </li>
                 <li class="intro__bottom-filterItem">
-                    <button class="intro__bottom-filterTarget">По&#160;цитируемости <i class="ri-arrow-down-line"></i></button>
+                    <button class="intro__bottom-filterTarget">{{ __('intro.bottomButtons.by_citation') }} <i class="ri-arrow-down-line"></i></button>
                 </li>
             </ul>
         </div>
