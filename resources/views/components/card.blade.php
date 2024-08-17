@@ -2,9 +2,9 @@
 <article class="cards-list__card card">
     <div class="card__row">
         <div class="card__col-left">
-            <a href="{{ route('chanel') }}" class="card__link-more">
+            <a href="{{ route('chanel', $chanel->id) }}" class="card__link-more">
                 <div class="card__avatar">
-                    <img loading="lazy" src="{{ url('storage', $chanel->img) }}" alt="" class="card__avatar-img" />
+                    <img loading="lazy" src="{{ url('storage', $chanel->img) }}" alt="{{ $chanel->title }}" class="card__avatar-img" />
                 </div>
                 <div class="card__detail">
                     <h3 class="card__detail-name">️{{ $chanel->title }}</h3>

@@ -97,10 +97,13 @@ class ChanelResource extends Resource
                         TextInput::make('age_channel')
                             ->label('Возраст канала')
                             ->numeric()
+                            ->step(0.1)
+                            ->placeholder('Введите значение в числах')
                             ->required(),
                         TextInput::make('publications')
                             ->label('Всего публикаций')
                             ->numeric()
+                            ->placeholder('Введите значение в числах')
                             ->required(),
                             TextInput::make('language')
                             ->label('Гео и язык канала'),

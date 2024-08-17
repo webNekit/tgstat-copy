@@ -943,6 +943,7 @@ html, body {
 }
 .preview__chanel-infoAvatar {
   min-width: 222px;
+  max-width: 222px;
   height: 222px;
 }
 @media (max-width: 768px) {
@@ -958,7 +959,7 @@ html, body {
   }
 }
 .preview__chanel-infoImg {
-  width: 100%;
+  max-width: 100%;
   width: 100%;
   height: 100%;
   border-radius: 50%;

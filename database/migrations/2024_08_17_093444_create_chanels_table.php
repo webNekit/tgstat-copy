@@ -47,7 +47,7 @@ return new class extends Migration
             $table->float('average_advertising_reach_week')->default(0)->comment('общее значение');
             $table->float('average_advertising_reach_month')->default(0)->comment('общее значение');
             // возраст канала
-            $table->integer('age_channel')->default(0);
+            $table->float('age_channel')->default(0);
             $table->integer('publications')->default(0);
             $table->string('language')->nullable();
             $table->string('img')->nullable();
