@@ -1096,6 +1096,9 @@ html, body {
   padding: 12px 12px 12px 24px;
   transition: background 200ms;
 }
+.sidebar__categories-target.sidebar__categories-target--active {
+  background-color: var(--color-ghost);
+}
 .sidebar__categories-target.sidebar__categories-target--active::before {
   opacity: 1;
 }
