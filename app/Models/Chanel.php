@@ -38,6 +38,7 @@ class Chanel extends Model
         'publications',
         'language',
         'img',
+        'type',
         'is_active',
         'link'
     ];
@@ -61,6 +62,32 @@ class Chanel extends Model
             default:
                 return $this->category->title_ru; // По умолчанию, если язык не поддерживается
         }
+    }
+    public function getTitleAttribute()
+    {
+        $locale = app()->getLocale();
+        $field = 'title_' . $locale;
+
+        // Проверка, существует ли поле в модели
+        if (array_key_exists($field, $this->attributes)) {
+            return $this->attributes[$field];
+        }
+
+        // Возвращаем заголовок на языке по умолчанию, если указанный язык не найден
+        return $this->attributes['title_' . config('app.locale')];
+    }
+    public function getDescriptionAttribute()
+    {
+        $locale = app()->getLocale();
+        $field = 'description_' . $locale;
+
+        // Проверка, существует ли поле в модели
+        if (array_key_exists($field, $this->attributes)) {
+            return $this->attributes[$field];
+        }
+
+        // Возвращаем описание на языке по умолчанию, если указанный язык не найден
+        return $this->attributes['description_' . config('app.locale')];
     }
 }
 

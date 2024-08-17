@@ -9,12 +9,7 @@
                     </a>
                 </div>
                 <div class="header__search-form header-search">
-                    <form action="#!" class="header-search__form">
-                        <div class="header-search__field">
-                            <input type="search" class="header-search__input" placeholder="{{ __('searchPlaceholder.placeholder') }}" />
-                            <button type="submit" class="header-search__button"><i class="ri-search-line"></i></button>
-                        </div>
-                    </form>
+                    <livewire:search-box />
                 </div>
             </div>
             <div class="header__col-right">

@@ -52,6 +52,7 @@ return new class extends Migration
             $table->string('language')->nullable();
             $table->string('img')->nullable();
             $table->boolean('is_active')->default(false);
+            $table->string('type');
             $table->string('link')->comment('ссылка');
             $table->timestamps();
         });

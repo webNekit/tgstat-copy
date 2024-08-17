@@ -389,6 +389,7 @@ html, body {
   position: relative;
   --size: 74px;
   min-width: var(--size);
+  max-width: var(--size);
   height: var(--size);
   z-index: 20;
 }

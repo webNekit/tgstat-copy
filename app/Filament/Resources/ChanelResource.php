@@ -86,6 +86,14 @@ class ChanelResource extends Resource
                             ->relationship('category', 'title_ru')
                             ->label('Категория')
                             ->required(),
+                        Select::make('type')
+                            ->label('Тип канала')
+                            ->options([
+                                'public' => 'Публичный канал',
+                                'private' => 'Приватный канал',
+                            ])
+                            ->default('public')  // Установить значение по умолчанию, если необходимо
+                            ->required(),
                         TextInput::make('age_channel')
                             ->label('Возраст канала')
                             ->numeric(),

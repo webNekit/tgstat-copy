@@ -5,17 +5,7 @@
     <div class="container intro__container">
         <div class="intro__head-row">
             <h1 class="intro__head-title">{{ __('intro.title') }}</h1>
-            <ul class="intro__head-filter">
-                <li class="intro__head-filterItem">
-                    <button class="intro__head-filterTarget intro__head-filterTarget--active">{{ __('intro.topButtons.all_channels') }}</button>
-                </li>
-                <li class="intro__head-filterItem">
-                    <button class="intro__head-filterTarget">{{ __('intro.topButtons.public_channels') }}</button>
-                </li>
-                <li class="intro__head-filterItem">
-                    <button class="intro__head-filterTarget">{{ __('intro.topButtons.private_channels') }}</button>
-                </li>
-            </ul>
+            <livewire:sort-type />
         </div>
         <div class="intro__bottom-row">
             <ul class="intro__bottom-filter">
@@ -37,11 +27,7 @@
         <div class="website__main-wrapperBody">
             @include('layout.partials.sidebar')
             <div class="website__main-wrapperContent">
-                <ul class="website__main-cards cards-list">
-                    <li class="cards-list__item">
-                        <x-card />
-                    </li>
-                </ul>
+                <livewire:chanels />
             </div>
         </div>
     </div>
