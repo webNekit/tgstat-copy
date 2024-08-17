@@ -24,6 +24,7 @@ class LanguageSwitcher extends Component
         // Перезагрузите страницу после изменения языка
         return redirect()->route('home');
     }
+    
 
     public function render()
     {
