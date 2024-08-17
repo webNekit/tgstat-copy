@@ -26,20 +26,33 @@ return new class extends Migration
             $table->text('description_uz')->comment('Описание канала (Узбекский)');
             // связь с моделью категории
             $table->foreignIdFor(Category::class)->constrained()->onDelete('cascade');
-            // Общая информация
-            $table->integer('subscribers')->default(0);
-            $table->float('citation_index')->default(0);
-            $table->float('average_reach')->default(0);
-            $table->float('average_advertising_reach')->default(0);
+            // Подписчики
+            $table->integer('subscribers')->default(0)->comment('общее значение');
+            $table->integer('subscribers_day')->default(0)->comment('за день');
+            $table->integer('subscribers_week')->default(0)->comment('за неделю');
+            $table->integer('subscribers_month')->default(0)->comment('за месяц');
+            // индекс цитирования
+            $table->float('citation_index')->default(0)->comment('общее значение');
+            $table->float('citation_index_day')->default(0)->comment('за день');
+            $table->float('citation_index_week')->default(0)->comment('за неделю');
+            $table->float('citation_index_month')->default(0)->comment('за месяц');
+            // средний охват
+            $table->float('average_reach')->default(0)->comment('общее значение');
+            $table->float('average_reach_day')->default(0)->comment('за день');
+            $table->float('average_reach_week')->default(0)->comment('за неделю');
+            $table->float('average_reach_month')->default(0)->comment('за месяц');
+            // средний рекламный охват
+            $table->float('average_advertising_reach')->default(0)->comment('общее значение');
+            $table->float('average_advertising_reach_day')->default(0)->comment('общее значение');
+            $table->float('average_advertising_reach_week')->default(0)->comment('общее значение');
+            $table->float('average_advertising_reach_month')->default(0)->comment('общее значение');
+            // возраст канала
             $table->integer('age_channel')->default(0);
             $table->integer('publications')->default(0);
-            $table->integer('today')->default(0);
-            $table->integer('week')->default(0);
-            $table->integer('month')->default(0);
-            $table->integer('total')->default(0);
             $table->string('language')->nullable();
             $table->string('img')->nullable();
             $table->boolean('is_active')->default(false);
+            $table->string('link')->comment('ссылка');
             $table->timestamps();
         });
     }
