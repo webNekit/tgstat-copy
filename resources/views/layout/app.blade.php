@@ -21,6 +21,7 @@
         </main>
         @include('layout.partials.footer')
         <script src="{{ asset('assets/js/index.bundle.js') }}"></script>
+        @yield('script')
         @livewireScripts
     </body>
 </html>

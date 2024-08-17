@@ -125,7 +125,7 @@
             <div class="statistics__data-card">
                 <div class="statistics__data-cardContent">
                     <div class="statistics__data-cardInfo">
-                        <h3 class="statistics__data-cardValue">{{ $chanel->age_channel }} лет.</h3>
+                        <h3 class="statistics__data-cardValue" id="year">{{ $chanel->age_channel }} лет</h3>
                     </div>
                     <div class="statistics__data-cardLabel">{{ __('card.age_channel') }}</div>
                 </div>
@@ -141,4 +141,7 @@
         </div>
     </div>
 </section>
+@endsection
+@section('script')
+<script src="{{ asset('assets/js/year.js') }}"></script>
 @endsection
