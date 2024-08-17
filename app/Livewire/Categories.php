@@ -14,6 +14,11 @@ class Categories extends Component
         $this->categories = Category::where('is_active', true)->get();
     }
 
+    public function setCategory($categoryId)
+    {
+        $this->dispatch('categoryChanged', categoryId: $categoryId);
+    }
+
     public function render()
     {
         return view('livewire.categories');

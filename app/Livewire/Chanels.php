@@ -11,11 +11,14 @@ use Livewire\Component;
 class Chanels extends Component
 {
 
-    #[Url]
+    #[Url()]
     public $search = '';
-
-    #[Url]
+    #[Url()]
     public $filter = 'all';
+    #[Url()]
+    public $orderBy = 'subscribers';
+    #[Url()]
+    public $category = null; // Добавляем категорию для фильтрации
 
     #[On('search')]
     public function updateSearch($search)
@@ -29,7 +32,19 @@ class Chanels extends Component
         $this->filter = $filter;
     }
 
-    #[Computed]
+    #[On('orderByChanged')]
+    public function updateOrderBy($orderBy)
+    {
+        $this->orderBy = $orderBy;
+    }
+
+    #[On('categoryChanged')]
+    public function updateCategory($categoryId)
+    {
+        $this->category = $categoryId;
+    }
+
+    #[Computed()]
     public function chanels()
     {
         $query = Chanel::where('is_active', true);
@@ -40,11 +55,11 @@ class Chanels extends Component
             $query->where('type', 'private');
         }
 
-        if ($this->search) {
-            $query->where('title_ru', 'like', "%{$this->search}%"); // Пример с русским заголовком, измените по необходимости
+        if ($this->category) {
+            $query->where('category_id', $this->category);
         }
 
-        return $query->orderBy('subscribers', 'desc')->get();
+        return $query->orderBy($this->orderBy, 'desc')->get();
     }
 
     public function render()

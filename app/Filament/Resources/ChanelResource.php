@@ -32,7 +32,7 @@ class ChanelResource extends Resource
         return 'Каналы';
     }
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-tag';
 
     public static function form(Form $form): Form
     {
@@ -96,10 +96,12 @@ class ChanelResource extends Resource
                             ->required(),
                         TextInput::make('age_channel')
                             ->label('Возраст канала')
-                            ->numeric(),
+                            ->numeric()
+                            ->required(),
                         TextInput::make('publications')
                             ->label('Всего публикаций')
-                            ->numeric(),
+                            ->numeric()
+                            ->required(),
                             TextInput::make('language')
                             ->label('Гео и язык канала'),
                         FileUpload::make('img')

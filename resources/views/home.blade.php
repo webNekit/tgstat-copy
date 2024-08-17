@@ -8,17 +8,7 @@
             <livewire:sort-type />
         </div>
         <div class="intro__bottom-row">
-            <ul class="intro__bottom-filter">
-                <li class="intro__bottom-filterItem">
-                    <button class="intro__bottom-filterTarget">{{ __('intro.bottomButtons.by_subscribers') }} <i class="ri-arrow-down-line"></i></button>
-                </li>
-                <li class="intro__bottom-filterItem">
-                    <button class="intro__bottom-filterTarget">{{ __('intro.bottomButtons.by_coverage') }} <i class="ri-arrow-down-line"></i></button>
-                </li>
-                <li class="intro__bottom-filterItem">
-                    <button class="intro__bottom-filterTarget">{{ __('intro.bottomButtons.by_citation') }} <i class="ri-arrow-down-line"></i></button>
-                </li>
-            </ul>
+            <livewire:order-by />
         </div>
     </div>
 </section>
