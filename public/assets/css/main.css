@@ -658,6 +658,29 @@ html, body {
   color: var(--color-text);
 }
 
+.header__bottom {
+  width: 100%;
+  background-color: var(--color-background);
+}
+
+.header__bottom-navbar {
+  width: 100%;
+}
+
+.header__bottom-navbarList {
+  display: flex;
+  justify-content: flex-start;
+}
+.header__bottom-navbarItem {
+  display: inline-flex;
+}
+.header__bottom-navbarLink {
+  padding: 12px 16px;
+}
+.header__bottom-navbarLink--active {
+  border-bottom: 2px solid var(--color-link);
+}
+
 .icons-wrapper {
   padding: 30px 0;
   display: flex;

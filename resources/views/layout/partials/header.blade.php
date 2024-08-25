@@ -29,4 +29,14 @@
             </div>
         </div>
     </div>
+    <div class="header__bottom">
+        <div class="header__bottom-container container">
+            <nav class="header__bottom-navbar">
+                <ul class="header__bottom-navbarList">
+                    <li class="header__bottom-navbarItem"><a href="{{ route('home') }}" class="header__bottom-navbarLink {{ Route::currentRouteName() == 'home' ? 'header__bottom-navbarLink--active' : '' }}">Рейтинг каналов</a></li>
+                    <li class="header__bottom-navbarItem"><a href="{{ route('message.index') }}" class="header__bottom-navbarLink {{ Route::currentRouteName() == 'message.index' ? 'header__bottom-navbarLink--active' : '' }}">Рейтинг чатов</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </header>
